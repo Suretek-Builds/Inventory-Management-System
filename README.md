@@ -136,7 +136,7 @@ This project is licensed under the MIT License - see the LICENSE file for detail
   php artisan migrate
 
 ### **5. Run the Development Server**
-- To start the development servers for both backend and frontend:
+To start the development servers for both backend and frontend:
 - **Backend (Laravel):**
   ```bash
   php artisan serve
