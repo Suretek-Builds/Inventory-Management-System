@@ -89,3 +89,10 @@ The following npm scripts are available for managing the frontend:
 - **Development Mode**:
   ```bash
   npm run dev
+Starts the development server with hot reloading.
+
+- **Build Production**:
+  ```bash
+  npm run build
+Builds the project for production.
+
