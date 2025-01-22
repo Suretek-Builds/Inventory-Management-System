@@ -104,13 +104,45 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 ## **Installation Setup**
 ### **1. Clone the repository**
-Start by cloning the repository to your local machine:
+- Start by cloning the repository to your local machine:
   ```bash
   git clone https://github.com/your-username/inventory-management.git
   cd inventory-management
 
-### **1. Clone the repository**
-Start by cloning the repository to your local machine:
- ```bash
-git clone https://github.com/your-username/inventory-management.git
-cd inventory-management
+### **2. Install Backend (Laravel) Dependencies**
+- Navigate to the backend folder and install the necessary Laravel dependencies:
+  ```bash
+  cd backend
+  composer install
+  php artisan key:generate
+
+### **3. Install Frontend (Vue.js) Dependencies**
+- Navigate to the frontend folder and install the Vue.js dependencies:
+  ```bash
+  cd frontend
+  npm install
+
+### **4. Configure the Database**
+- Make sure your PostgreSQL database is set up and the connection is configured in the .env file. Update the database settings as needed:
+  ```bash
+  DB_CONNECTION=pgsql
+  DB_HOST=127.0.0.1
+  DB_PORT=5432
+  DB_DATABASE=your_database_name
+  DB_USERNAME=your_username
+  DB_PASSWORD=your_password
+- Run the migrations to set up the necessary tables in the database:
+  ```bash
+  php artisan migrate
+
+### **5. Run the Development Server**
+- To start the development servers for both backend and frontend:
+- **Backend (Laravel):**
+  ```bash
+  php artisan serve
+
+- **Frontend (Vue.js with Vite):**
+  ```bash
+  npm run dev
+
+
