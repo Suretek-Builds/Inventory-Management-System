@@ -96,3 +96,11 @@ Starts the development server with hot reloading.
   npm run build
 Builds the project for production.
 
+## **Contributing**
+We welcome contributions! If you'd like to help improve this project, please fork the repository, create a new branch, and submit a pull request with your changes.
+
+## **License**
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+## **Installation Setup**
+****
