@@ -103,4 +103,14 @@ We welcome contributions! If you'd like to help improve this project, please for
 This project is licensed under the MIT License - see the LICENSE file for details.
 
 ## **Installation Setup**
-****
+### **1. Clone the repository**
+Start by cloning the repository to your local machine:
+  ```bash
+  git clone https://github.com/your-username/inventory-management.git
+  cd inventory-management
+
+### **1. Clone the repository**
+Start by cloning the repository to your local machine:
+ ```bash
+git clone https://github.com/your-username/inventory-management.git
+cd inventory-management
