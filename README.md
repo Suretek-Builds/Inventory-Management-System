@@ -103,46 +103,64 @@ We welcome contributions! If you'd like to help improve this project, please for
 This project is licensed under the MIT License - see the LICENSE file for details.
 
 ## **Installation Setup**
-### **1. Clone the repository**
-- Start by cloning the repository to your local machine:
-  ```bash
-  git clone https://github.com/your-username/inventory-management.git
-  cd inventory-management
+#### Step 1 – Cloning Repository
 
-### **2. Install Backend (Laravel) Dependencies**
-- Navigate to the backend folder and install the necessary Laravel dependencies:
-  ```bash
-  cd backend
-  composer install
-  php artisan key:generate
+To clone repository, use the command below:
 
-### **3. Install Frontend (Vue.js) Dependencies**
-- Navigate to the frontend folder and install the Vue.js dependencies:
-  ```bash
-  cd frontend
-  npm install
+```shell
+git clone <path_to_this_repo> <your_local_dir>
+```
 
-### **4. Configure the Database**
-- Make sure your PostgreSQL database is set up and the connection is configured in the .env file. Update the database settings as needed:
-  ```bash
-  DB_CONNECTION=pgsql
-  DB_HOST=127.0.0.1
-  DB_PORT=5432
-  DB_DATABASE=your_database_name
-  DB_USERNAME=your_username
-  DB_PASSWORD=your_password
-- Run the migrations to set up the necessary tables in the database:
-  ```bash
-  php artisan migrate
+After cloning, navigate to repository and execute `git checkout staging`
+to ensure you have the latest updates.
 
-### **5. Run the Development Server**
-To start the development servers for both backend and frontend:
-- **Backend (Laravel):**
-  ```bash
-  php artisan serve
+#### Step 2 – Creating .env file
 
-- **Frontend (Vue.js with Vite):**
-  ```bash
-  npm run dev
+Make a copy of `.env.example` and give it name `.env`:
+
+```shell
+cp .env.example .env
+```
+
+Feel free to make any necessary changes, such as adding missing values (credentials) for external services or
+modifying the ports used for forwarding from containers to the host machine (e.g., ports for pgsql or the minio).
+
+
+#### Install Composer Dependencies
+
+```bash
+composer install
+```
+
+#### Generate Application Key
+
+```bash
+php artisan key:generate
+```
+
+#### Migrate Database
+
+```bash
+php artisan migrate
+```
+
+#### Run Seeder
+
+```bash
+php artisan db:seed
+```
+
+#### Install Node Dependencies
+
+```bash
+npm install or yarn install
+
+npm run dev or yarn dev
+```
+#### Production
+
+```bash
+npm run build or yarn build
+```
 
 
