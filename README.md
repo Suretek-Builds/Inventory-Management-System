@@ -17,8 +17,8 @@ The system allows administrators to manage procedure code mappings, automate inv
 ---
 
 ## **Features**
-1. **Mock Procedure Code Retrieval**
-   - Simulates the retrieval of procedure codes from a mock dataset.
+1. **Procedure Code Retrieval**
+   - Simulates the retrieval of procedure codes from a dataset.
 2. **Procedure Code Mapping Interface**
    - Allows mapping of procedure codes to predefined templates.
 3. **Automated Inventory Deduction**
@@ -32,12 +32,12 @@ The system allows administrators to manage procedure code mappings, automate inv
 
 ## **Features Walkthrough**
 
-### **1. Mock Procedure Code Retrieval**
-The system simulates the retrieval of procedure codes from a local mock dataset. Sample procedure codes include:
+### **1. Procedure Code Retrieval**
+The system simulates the retrieval of procedure codes from a local dataset. Sample procedure codes include:
 - `D3310` (Root Canal Treatment)
 - `D2331` (Tooth Filling)
 
-The data can be fetched and displayed in the Vue.js frontend via API requests. The mock dataset can be updated or expanded as needed.
+The data can be fetched and displayed in the Vue.js frontend via API requests. The dataset can be updated or expanded as needed.
 
 ### **2. Procedure Code Mapping**
 Admins have the ability to map procedure codes to predefined templates. For example:
